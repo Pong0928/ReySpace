@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="crossorigin">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@500&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@900&display=swap"
+            rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Rey's Space</title>
+    </head>
+    <body>
+        <nav class="fixed w-screen top-0 bg-white border-gray-200 dark:bg-gray-900">
+            <div
+                class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <span
+                    class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">REY GO</span>
+                <button 
+                    id="hamburgerBtn"
+                    data-collapse-toggle="navbar-default"
+                    type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-default"
+                    aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg
+                        class="w-5 h-5"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewbox="0 0 17 14">
+                        <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15"/>
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul
+                        class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <li>
+                            <a
+                                href="#Home"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a
+                                href="#About"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+                        </li>
+                        <li>
+                            <a
+                                href="#Project"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Project</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div
+            id="Home"
+            class="flex justify-center items-center h-screen text-center bg-slate-200">
+            <div class="w-1/2">
+                <div class="text-5xl mb-5 font-bold">
+                    HEY, I'M REY GO
+                </div>
+                <div class="text-xl mb-5 text">
+                    Passionate and skilled full-stack programmer with a year of hands-on experience,
+                    actively seeking an entrylevel programmer position in Toronto
+                </div>
+                <div>
+                    <a class="text-white font-bold bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 rounded-lg text-xl px-20 py-3 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" href="#About">START</a>
+                </div>
+            </div>
+        </div>
+        <div id="About" class="xl:px-96 py-24 bg-slate-100">
+            <div class="flex justify-center items-center mb-20">
+                <div class="text-center">
+                    <div class="text-4xl font-bold mb-2">About Me</div>
+                    <div class="w-12 h-2 mx-auto mb-5 bg-blue-700 rounded"></div>
+                    <div class="text-xl">Here you will find more information about me, what I do,
+                        and my current skills mostly in terms of programming and technology</div>
+                </div>
+            </div>
+            <div>
+                <div class="text-3xl font-bold mb-10 px-5">Work Experience</div>
+                <div class="rounded-lg text-lg mb-20 flex p-5 hover:bg-slate-500/5" ">
+                    <div>
+                        <div class="flex justify-between">
+                            <div class="text-2xl">Analyst Programmer</div>
+                            <div class="text-base">05/2022 - 08/2023</div>
+                        </div>
+                        <a class="underline " href="https://www.yesstyle.com/en/home.html">Yesstyle.com</a>
+                        <ul class="list-disc text-base">
+                            <li class="ml-5">
+                                Improved and maintained E-commerce applications like Yesstyle.com,
+                                AsianBeautyWholeSale.com, and YesAsia.com
+                            </li>
+                            <li class="ml-5">
+                                Enhanced Yesstyle.com's efficiency by 10% through a comprehensive project
+                                structure shift from Apache Wicket to NextJS
+                            </li>
+                            <li class="ml-5">
+                                Collaborated with Business Analysts (BA) and Project Management (PM) teams,
+                                ensuring effective project management, development, and delivery using Agile
+                                methodology
+                            </li>
+                            <li class="ml-5">
+                                Simplified tax editorial display logic, significantly increasing efficiency when
+                                incorporating new countries
+                            </li>
+                            <li class="ml-5">
+                                Updated both UI and backend logic for the register page
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text-3xl font-bold mb-10 px-5">Eduction</div>
+                <div class="rounded-lg text-lg mb-20 flex p-5 hover:bg-slate-500/5" ">
+                    <div class="w-1/2">
+                        <p class="text-2xl">BSc (Hons) Information Technology</p>
+                        <p>University of the West of England</p>
+                    </div>
+                    <div class="w-1/2 text-right">
+                        <p class="text-base">2019 - 2020</p>
+                        <p>Grades: Second Class (Upper Division)</p>
+                    </div>
+                </div>
+                <div class="rounded-lg text-lg mb-20 flex p-5 hover:bg-slate-500/5" ">
+                    <div class="w-1/2">
+                        <p class="text-2xl">Higher Diploma in Software Engineering</p>
+                        <p>Hong Kong Institute of Vocational Education</p>
+                    </div>
+                    <div class="w-1/2 text-right">
+                        <p class="text-base">2017 - 2019</p>
+                        <p>CGPA: 3.27 / 4.0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Project" class="xl:px-96 py-24 bg-slate-200">
+            <div class="justify-center items-center mb-20">
+                <div class="text-center">
+                    <div class="text-4xl font-bold mb-2">Project</div>
+                    <div class="w-12 h-2 mx-auto mb-5 bg-blue-700 rounded"></div>
+                    <div class="text-xl">Here you will find some of the personal and clients
+                        projects that I created with each project containing its own case study</div>
+                </div>
+            </div>
+            <div class="rounded-lg w-full text-lg mb-20 p-5 hover:bg-slate-500/5" ">
+                <div class="flex justify-between">
+                    <div class="text-2xl">Mobile Application for Food Calorie Calculation</div>
+                    <div class="text-base">2019-2020</div>
+                </div>
+                <ul class="list-disc text-base">
+                    <li class="ml-5">
+                        Using image recognition to recognize the food and display the calories of the
+                        food to the user
+                    </li>
+                    <li class="ml-5">
+                        Display the Chart to the user to check the total calories per day and week
+                    </li>
+                    <li class="ml-5">
+                        Calculate the Resting Metabolic Rate to the user based on their personal
+                        information
+                    </li>
+                    <li class="ml-5">
+                        In charge of the whole project
+                    </li>
+                </ul>
+                <div class="flex justify-end">
+                    <a
+                        class="py-2 px-4 bg-blue-500 text-white rounded-lg shadow-md"
+                        href="https://drive.google.com/file/d/1Gr6lgdk-zZ1NnEf7X8PRFWxZ7V2yfPgJ/view?usp=sharing">Download</a>
+                </div>
+            </div>
+            <div class="rounded-lg w-full text-lg mb-20 p-5 hover:bg-slate-500/5">
+                <div class="flex justify-between">
+                    <div class="text-2xl">Web application for Cabin Service System</div>
+                    <div class="text-base">2018-2019</div>
+                </div>
+                <ul class="list-disc text-base">
+                    <li class="ml-5">
+                        Help CASL company to schedule the time table to their working teams automatedly
+                    </li>
+                    <li class="ml-5">
+                        Real-time map to check the progress of the teams
+                    </li>
+                    <li class="ml-5">
+                        Display the Chart for the workload of each team to check the KPI
+                    </li>
+                    <li class="ml-5">
+                        In charge of the back-end part and auto-schedule function
+                    </li>
+                </ul>
+                <div class="flex justify-end">
+                    <a
+                        class="py-2 px-4 bg-blue-500 text-white rounded-lg shadow-md"
+                        href="https://drive.google.com/file/d/1A43M0Uj3IKSNxE1W9J93w0tg8wINYLQB/view?usp=sharing">Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="flex bg-gray-900 text-white px-5 xl:px-48 py-12">
+            <div class="xl:w-2/5">
+                <div class="font-bold mb-5">REY GO</div>
+                <div>Passionate and skilled full-stack programmer with a year of hands-on
+                    experience, actively seeking an entrylevel programmer position in Toronto</div>
+            </div>
+            <div class="xl:w-3/5 flex flex-col items-end">
+                <div class="w-48">
+                    <div class="font-bold mb-5">SOCIAL</div>
+                    <div class="flex">
+                        <a href="https://github.com/Pong0928" target="_blank"><img
+                            class="w-8"
+                            src="https://d33wubrfki0l68.cloudfront.net/5557d5a11584d7201a38ee1a95200f57a4cc0f88/15085/assets/png/github-ico.png"
+                            alt=""></a>
+                        <a href="https://www.linkedin.com/in/ling-pong-go-6a81831b4/"><img
+                            class="w-8"
+                            src="https://d33wubrfki0l68.cloudfront.net/7f29579dde49e02480372aa49f7189c5536b0118/34b92/assets/png/linkedin-ico.png"
+                            alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
